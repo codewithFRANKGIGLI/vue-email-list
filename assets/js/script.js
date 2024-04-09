@@ -7,6 +7,12 @@ createApp({
     },
     methods: {
         getMailsFromApi() {
+            // Ciclo for che genera 10 mail
+            for (let i = 0; i < 10; i++) {
+                this.getMail();
+            }
+        },
+        getMail() {
             // Chiamiamo l'api che genera una main
             // quando otteniamo la risposta: popoliamo la variabile arrayMails col
             // la mail random ottenua dall'API
